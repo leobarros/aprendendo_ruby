@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 class Livro
-  def initialize(autor, isbn = "1", numero_de_paginas)
+  def initialize(autor, isbn = "1", numero_de_paginas, preco)
     puts "Autor: #{autor}, ISBN: #{isbn}, Pag: #{numero_de_paginas}"
 
       #copiando os valores dos parametros do metodo initialize
@@ -11,6 +11,7 @@ class Livro
       @autor = autor
       @isbn = isbn
       @numero_de_paginas = numero_de_paginas
+      @preco = preco
   end
 
   def to_s
@@ -18,8 +19,8 @@ class Livro
   end
 end
 
- teste_e_design = Livro.new("Mauricio Aniche", "123454", 247)
- web_design_responsivo = Livro.new("Tarcio Zemel", "452565", 321)
+ teste_e_design = Livro.new("Mauricio Aniche", "123454", 247, 60.9)
+ web_design_responsivo = Livro.new("Tarcio Zemel", "452565", 321, 69.0)
 
  puts teste_e_design
  puts web_design_responsivo
