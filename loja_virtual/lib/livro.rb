@@ -28,4 +28,9 @@ end
  web_design_responsivo = Livro.new("Tarcio Zemel", "452565", 321, 69.0)
 
  puts teste_e_design
+ #Pegando o valor do livro teste_e_design
+ puts "Preço: #{teste_e_design.preco}"
+
  puts web_design_responsivo
+ #Pegando o valor do livro web_design_resposivo
+ puts "Preço: #{web_design_responsivo.preco}"
