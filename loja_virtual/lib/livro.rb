@@ -14,6 +14,11 @@ class Livro
       @preco = preco
   end
 
+  #criando um metodo publico para acessar o preco
+  def preco
+  	@preco
+  end
+
   def to_s
   	"Autor: #{@autor}, ISBN: #{@isbn}, Paginas: #{@numero_de_paginas}"
   end
