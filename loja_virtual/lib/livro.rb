@@ -14,7 +14,7 @@ class Livro
   end
 
   def to_s
-  	"Autor: #{@autor}, ISBN: #{@isbn}, Paginas: #{numero_de_paginas}"
+  	"Autor: #{@autor}, ISBN: #{@isbn}, Paginas: #{@numero_de_paginas}"
   end
 
  teste_e_design = Livro.new("Mauricio Aniche", "123454", 247)
