@@ -13,6 +13,10 @@ class Livro
       @numero_de_paginas = numero_de_paginas
   end
 
+  def to_s
+  	"Autor: #{@autor}, ISBN: #{@isbn}, Paginas: #{numero_de_paginas}"
+  end
+
  teste_e_design = Livro.new("Mauricio Aniche", "123454", 247)
  web_design_responsivo = Livro.new("Tarcio Zemel", "452565", 321)
 
