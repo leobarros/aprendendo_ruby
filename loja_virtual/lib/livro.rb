@@ -2,6 +2,9 @@
 # encoding: utf-8
 
 class Livro
+	
+	attr_accessor :preco
+
   def initialize(autor, isbn = "1", numero_de_paginas, preco)
     puts "Autor: #{autor}, ISBN: #{isbn}, Pag: #{numero_de_paginas}"
 
@@ -12,15 +15,6 @@ class Livro
       @isbn = isbn
       @numero_de_paginas = numero_de_paginas
       @preco = preco
-  end
-
-  #criando um metodo publico para acessar o preco
-  def preco
-  	@preco
-  end
-
-  def preco=(preco)
-  	@preco = preco
   end
 
   def to_s
