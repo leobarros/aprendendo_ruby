@@ -4,8 +4,9 @@
 class Livro
    
   attr_accessor :valor
-  
-  def initialize(autor, isbn = "1", numero_de_paginas, valor)
+  attr_reader :categoria
+   
+  def initialize(autor, isbn = "1", numero_de_paginas, valor, categoria)
     #copiando os valores dos parametros do metodo initialize
     #para variaveis de instancia
       
@@ -13,10 +14,12 @@ class Livro
       @isbn = isbn
       @numero_de_paginas = numero_de_paginas
       @valor = valor
+      @categoria = categoria
+      
   end
   
   def to_s
-    "Autor: #{@autor}, ISBN: #{@isbn}, Paginas: #{@numero_de_paginas}"
+    "Autor: #{@autor}, ISBN: #{@isbn}, Paginas: #{@numero_de_paginas}, Categoria: #{@categoria}"
   end
 end
  
