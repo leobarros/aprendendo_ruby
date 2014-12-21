@@ -2,8 +2,10 @@
 # encoding: utf-8
 
 class Livro
+  
   attr_accessor :valor
-
+  attr_reader :categoria
+  
   def initialize(autor, isbn = "1", numero_de_paginas, preco)
     #copiando os valores dos parametros do metodo initialize
     #para variaveis de instancia
