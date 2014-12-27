@@ -9,9 +9,9 @@ class Biblioteca
     @livros = {} #Inicializa com um hash 
   end
 
-  def adiciona(livros)
+  def adiciona(livro)
     @livros[livro.categoria] ||=[]
-    @livros[livro.categoria] << livros
+    @livros[livro.categoria] << livro
   end
 
 end
