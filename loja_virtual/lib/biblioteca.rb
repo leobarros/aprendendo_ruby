@@ -7,11 +7,12 @@ class Biblioteca
   attr_reader :livros
   
   def initialize
-    @livros = []
+    @livros = {} #Inicializa com um hash 
   end
   
   def adiciona(livros)
-    @livros << livros
+    @livros[livro.categoria] ||=[]
+    @livros[livro.categoria] << livros
   end
 
 end
