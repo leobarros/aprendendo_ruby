@@ -14,4 +14,8 @@ class Biblioteca
     @livros[livro.categoria] << livro
   end
 
+  def livros
+    @livros.values.flatten
+  end
+
 end
