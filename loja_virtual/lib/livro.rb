@@ -28,15 +28,3 @@ class Livro
   end
 
 end
-
- # guardar os dados em um array
-
-  biblioteca = []
-
-  teste_e_design = Livro.new("Mauricio Aniche", "123454", 247, 60.9)
-  web_design_responsivo = Livro.new("Tarcio Zemel", "452565", 321, 69.0)
-
-  biblioteca << teste_e_design
-  biblioteca << web_design_responsivo
-
-  puts biblioteca
