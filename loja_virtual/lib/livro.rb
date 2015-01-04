@@ -27,4 +27,8 @@ class Livro
     @isbn == outro_livro.isbn
   end
 
+  def hash
+    @isbn.hash
+  end
+
 end
