@@ -11,7 +11,7 @@ class Relatorio
   end
 
   def titulos
-    @biblioteca.livros.map { |livro| livro.titulo }
+    @biblioteca.livros.map &:titulo
   end
 end
 
