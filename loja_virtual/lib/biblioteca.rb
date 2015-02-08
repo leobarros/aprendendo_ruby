@@ -20,7 +20,7 @@ class Biblioteca
 
   def livros_por_categoria(categoria)
     @livros[categoria].each do |livro|
-      yield livro
+      yield livro if block_given?
     end
   end
 
